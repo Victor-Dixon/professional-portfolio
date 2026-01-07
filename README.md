@@ -1,5 +1,6 @@
-# 💼 **DaDudeKC - Site Reliability Engineer & System Maintenance Expert**
+# 💼 **Victor-Dixon (DaDudeKC) - Site Reliability Engineer & System Maintenance Expert**
 
+[![GitHub](https://img.shields.io/badge/GitHub-Victor--Dixon-black)](https://github.com/Victor-Dixon)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/dadudekc)
 [![Portfolio](https://img.shields.io/badge/Portfolio-dadudekc.com-green)](https://dadudekc.com)
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:contact@dadudekc.com)
@@ -32,33 +33,37 @@
 
 ## 🚀 **Featured Projects**
 
-### **Repository Ecosystem Management**
-**Enterprise-scale repository organization and optimization**
-- Reviewed and restructured 67+ personal repositories
-- Identified $50K+ in development potential through systematic analysis
-- Created enterprise-grade documentation and quality assurance frameworks
-- **Technologies**: Git, Python, System Architecture, Project Management
+### **MeTuber - YouTube Automation Platform**
+**YouTube automation and management platform for content creators**
+[![GitHub](https://img.shields.io/badge/GitHub-MeTuber-blue)](https://github.com/Victor-Dixon/MeTuber)
+- Streamlines video operations, analytics integration, and channel management workflows
+- Automated content publishing and performance tracking
+- Multi-platform content distribution and engagement analytics
+- **Technologies**: Python, YouTube API, Analytics Integration
 
-### **AI-Powered Content Platform (Auto_Blogger)**
-**Multi-stage AI content generation with quality control**
-- Architected AI-powered blog content generation pipeline
-- Integrated multiple AI providers with intelligent failover
-- Implemented vector similarity search preventing content duplication
-- **Technologies**: Python, FastAPI, FAISS, WordPress API, Docker
+### **Dream.os - Multi-Agent AI System**
+**Multi-agent AI system for automated development and coordination**
+[![GitHub](https://img.shields.io/badge/GitHub-Dream.os-blue)](https://github.com/Victor-Dixon/Dream.os)
+- Agent swarm architecture for infrastructure management
+- Automated development workflows and coordination
+- Intelligent task distribution and execution
+- **Technologies**: Python, Multi-Agent Systems, AI Orchestration
 
-### **MMORPG Platform (Thea)**
-**AI-integrated gaming platform with advanced features**
-- Directed development of comprehensive AI-powered gaming platform
-- Architected modular system integrating character creation and world building
-- Designed extensible prompt engineering for dynamic content generation
-- **Technologies**: Python, FastAPI, React, PostgreSQL, WebSockets
+### **AgentTools - Developer Automation Suite**
+**Collection of developer tools, scripts, and utilities for automation**
+[![GitHub](https://img.shields.io/badge/GitHub-AgentTools-blue)](https://github.com/Victor-Dixon/AgentTools)
+- Automation scripts for testing and infrastructure management
+- Developer productivity tools and utilities
+- CI/CD pipeline automation and deployment scripts
+- **Technologies**: Python, Shell Scripting, DevOps Tools
 
-### **AI Agent Orchestration (Agent_Cellphone_V2)**
-**Advanced multi-agent coordination system**
-- Architected sophisticated multi-agent AI coordination platform
-- Directed development of modular agent architecture with persistent memory
-- Oversaw secure API architecture with advanced authentication
-- **Technologies**: Python, FastAPI, React, PostgreSQL, JWT
+### **Flowr - Smart Session Timer**
+**Smoke session timer with advanced features and local history**
+[![GitHub](https://img.shields.io/badge/GitHub-Flowr-blue)](https://github.com/Victor-Dixon/Flowr)
+- Start/end/duration display with voice auto-stop functionality
+- Local session history and analytics
+- Web Speech API integration for voice commands
+- **Technologies**: JavaScript, Web Speech API, Local Storage
 
 ---
 
@@ -67,29 +72,29 @@
 ### **Site Reliability Engineer & System Maintenance Expert**
 **Personal Projects & Open Source Initiatives** | 2022 - Present
 
-**Enterprise Repository Transformation (2025-2026)**
-- Directed comprehensive evaluation and strategic restructuring of 67-repository ecosystem
-- Architected systematic value assessment framework identifying $50K+ development potential
-- Orchestrated migration and consolidation strategy for enterprise-grade portfolio management
-- Established industry-standard documentation and quality assurance frameworks
+**Multi-Agent AI System Development (Dream.os)**
+- Architected multi-agent AI system for automated development and coordination
+- Implemented agent swarm architecture for infrastructure management
+- Developed intelligent task distribution and execution frameworks
+- Maintained production-ready AI orchestration system with swarm intelligence
 
-**AI-Powered Content Automation Platform (Auto_Blogger)**
-- Architected multi-stage AI content generation pipeline with intelligent quality control
-- Directed integration of multiple AI providers (OpenAI, Mistral) with failover systems
-- Oversaw vector similarity search system preventing content duplication at scale
-- Maintained production-ready system handling complex content workflows
+**YouTube Automation Platform (MeTuber)**
+- Built comprehensive YouTube automation and management platform for content creators
+- Integrated analytics, channel management, and content workflow automation
+- Implemented automated publishing and performance tracking systems
+- Developed multi-platform content distribution and engagement analytics
 
-**MMORPG Platform with AI Orchestration (Thea)**
-- Directed development of comprehensive AI-powered gaming platform
-- Architected modular system integrating character creation, world building, and AI narratives
-- Designed extensible prompt engineering framework for dynamic content generation
-- Oversaw real-time multiplayer infrastructure and administrative systems
+**Developer Tools & Automation Suite (AgentTools)**
+- Created comprehensive collection of developer tools and automation scripts
+- Developed testing frameworks and infrastructure management utilities
+- Implemented CI/CD pipeline automation and deployment scripts
+- Built productivity tools for development workflow optimization
 
-**Advanced AI Agent Orchestration Platform (Agent_Cellphone_V2)**
-- Architected sophisticated multi-agent coordination system
-- Directed implementation of modular agent architecture with persistent memory
-- Oversaw development of comprehensive web interface for agent management
-- Designed secure API architecture with advanced authentication systems
+**Smart Session Timer Application (Flowr)**
+- Developed advanced session timer with voice control and analytics features
+- Integrated Web Speech API for voice-activated functionality and auto-stop
+- Implemented local session history and comprehensive analytics tracking
+- Created user-friendly interface with advanced session management capabilities
 
 ---
 
@@ -147,11 +152,21 @@ I'm passionate about system reliability, technical debt reduction, and maintaini
 
 ## 📈 **Repository Activity**
 
-This portfolio represents 4+ years of dedicated work in system reliability, AI orchestration, and enterprise software development. Each project demonstrates deep technical expertise and a commitment to production-quality systems.
+This portfolio represents 4+ years of dedicated work in AI systems, automation platforms, and developer tools. Each project demonstrates deep technical expertise in building complex, production-ready systems.
 
-**Total Projects**: 67+ repositories evaluated and optimized
-**Active Maintenance**: Enterprise-grade system reliability focus
-**Specialization**: AI integration, system architecture, production operations
+**Total Public Projects**: 7 repositories on GitHub
+**Active Development**: Multi-agent AI systems, content automation, developer tools
+**Specialization**: AI orchestration, automation platforms, system reliability
+
+### **GitHub Profile**: [github.com/Victor-Dixon](https://github.com/Victor-Dixon)
+
+**Key Repositories:**
+- **MeTuber**: YouTube automation platform
+- **Dream.os**: Multi-agent AI orchestration system
+- **AgentTools**: Developer automation suite
+- **WorkProjects**: Innovation and prototyping portfolio
+- **Websites**: Web development and deployment projects
+- **Flowr**: Smart session timer application
 
 ---
 
