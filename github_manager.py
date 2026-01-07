@@ -68,7 +68,7 @@ class GitHubManager:
         return response.json()["login"]
 
     def update_repository_descriptions(self, descriptions: Dict[str, str]) -> None:
-        """Update repository descriptions for Victor-Dixon repositories."""
+        """Update repository descriptions for repositories."""
         print(f"\n🔄 Updating repository descriptions for {self.username}...")
 
         for repo_name, description in descriptions.items():
@@ -83,6 +83,59 @@ class GitHubManager:
                 print(f"⚠️  Repository {repo_name} not found")
             else:
                 print(f"❌ Failed to update {repo_name}: {response.status_code}")
+
+    def setup_repository_features(self, repo_name: str) -> None:
+        """Set up professional repository features."""
+        print(f"\n🔧 Setting up features for {repo_name}...")
+
+        # Add topics
+        topics = self._get_topics_for_repo(repo_name)
+        if topics:
+            url = f"{self.base_url}/repos/{self.username}/{repo_name}/topics"
+            data = {"names": topics}
+            response = requests.put(url, headers={
+                **self.headers,
+                "Accept": "application/vnd.github.mercy-preview+json"
+            }, json=data)
+
+            if response.status_code == 200:
+                print(f"✅ Added topics to {repo_name}: {', '.join(topics)}")
+            else:
+                print(f"⚠️  Could not add topics to {repo_name}")
+
+        # Set homepage if applicable
+        homepage = self._get_homepage_for_repo(repo_name)
+        if homepage:
+            url = f"{self.base_url}/repos/{self.username}/{repo_name}"
+            data = {"homepage": homepage}
+            response = requests.patch(url, headers=self.headers, json=data)
+
+            if response.status_code == 200:
+                print(f"✅ Set homepage for {repo_name}: {homepage}")
+            else:
+                print(f"⚠️  Could not set homepage for {repo_name}")
+
+    def _get_topics_for_repo(self, repo_name: str) -> List[str]:
+        """Get appropriate topics for a repository."""
+        topic_map = {
+            "MeTuber": ["youtube", "automation", "content-creation", "python", "analytics"],
+            "Dream.os": ["ai", "multi-agent", "orchestration", "automation", "python"],
+            "AgentTools": ["automation", "devops", "tools", "python", "ci-cd"],
+            "WorkProjects": ["innovation", "prototyping", "ai", "machine-learning", "research"],
+            "Websites": ["web-development", "wordpress", "full-stack", "javascript", "php"],
+            "Flowr": ["javascript", "productivity", "session-management", "voice-api"],
+            "professional-portfolio": ["portfolio", "career", "resume", "professional", "sre"]
+        }
+        return topic_map.get(repo_name, [])
+
+    def _get_homepage_for_repo(self, repo_name: str) -> Optional[str]:
+        """Get homepage URL for a repository."""
+        homepage_map = {
+            "professional-portfolio": "https://github.com/Victor-Dixon/professional-portfolio",
+            "MeTuber": "https://github.com/Victor-Dixon/MeTuber",
+            "Dream.os": "https://github.com/Victor-Dixon/Dream.os"
+        }
+        return homepage_map.get(repo_name)
 
     def backup_profile_data(self) -> Dict:
         """Backup current profile information."""
@@ -158,13 +211,16 @@ def get_repository_descriptions() -> Dict[str, str]:
 def main():
     parser = argparse.ArgumentParser(description="GitHub Repository & Profile Manager")
     parser.add_argument("--update-descriptions", action="store_true", help="Update repository descriptions")
+    parser.add_argument("--setup-features", action="store_true", help="Set up repository topics and homepages")
+    parser.add_argument("--professional-setup", action="store_true", help="Complete professional setup (descriptions + features)")
     parser.add_argument("--backup-profile", action="store_true", help="Backup current profile data")
     parser.add_argument("--update-profile", action="store_true", help="Update profile README")
     parser.add_argument("--list-repos", action="store_true", help="List current repositories")
 
     args = parser.parse_args()
 
-    if not any([args.update_descriptions, args.backup_profile, args.update_profile, args.list_repos]):
+    if not any([args.update_descriptions, args.setup_features, args.professional_setup,
+                args.backup_profile, args.update_profile, args.list_repos]):
         parser.print_help()
         return
 
@@ -184,6 +240,24 @@ def main():
         if args.update_descriptions:
             descriptions = get_repository_descriptions()
             manager.update_repository_descriptions(descriptions)
+
+        if args.setup_features:
+            print("\n🏷️ Setting up repository features...")
+            descriptions = get_repository_descriptions()
+            for repo_name in descriptions.keys():
+                manager.setup_repository_features(repo_name)
+
+        if args.professional_setup:
+            print("\n🎯 Running complete professional repository setup...")
+            descriptions = get_repository_descriptions()
+            manager.update_repository_descriptions(descriptions)
+
+            print("\n🏷️ Setting up repository features...")
+            for repo_name in descriptions.keys():
+                manager.setup_repository_features(repo_name)
+
+            print("\n✅ Professional setup complete!")
+            print("📋 Review your repositories at: https://github.com/Victor-Dixon")
 
         if args.update_profile:
             # Read the README content from the portfolio
