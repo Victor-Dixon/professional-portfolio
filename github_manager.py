@@ -139,8 +139,7 @@ class GitHubManager:
 
     def backup_profile_data(self) -> Dict:
         """Backup current profile information."""
-        print("
-📦 Backing up profile data..."        )
+        print("\n📦 Backing up profile data...")
 
         # Get user profile
         user_response = requests.get(f"{self.base_url}/user", headers=self.headers)
