@@ -36,11 +36,11 @@ class GitHubManager:
     def __init__(self):
         self.base_url = "https://api.github.com"
         self.token = self._get_token()
-        self.username = self._get_username()
         self.headers = {
             "Authorization": f"token {self.token}",
             "Accept": "application/vnd.github.v3+json"
         }
+        self.username = self._get_username()
 
     def _get_token(self) -> str:
         """Securely get GitHub token from user input."""
