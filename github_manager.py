@@ -165,8 +165,7 @@ class GitHubManager:
 
     def update_profile_readme(self, content: str) -> None:
         """Update or create profile README."""
-        print("
-📝 Updating profile README..."        )
+        print("\n📝 Updating profile README...")
 
         # Check if profile README exists
         readme_response = requests.get(f"{self.base_url}/repos/{self.username}/{self.username}/readme", headers=self.headers)
