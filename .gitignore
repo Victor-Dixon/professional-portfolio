@@ -135,3 +135,4 @@ venv.bak/
 # Temporary files
 *.tmp
 *.temp
+.env*
