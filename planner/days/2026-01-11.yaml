@@ -1,0 +1,25 @@
+schema_version: 1
+date: "2026-01-11"
+day_theme: "Weekly review + lock next week"
+must_win_3:
+  - "Weekly review file created + next 5 workdays blocked"
+  - "Trading rules finalized (1 page)"
+  - "Recovery + movement"
+
+time_blocks:
+  - "11:00-12:00 Clean up — organize notes/files for Monday"
+  - "15:30-16:15 Trading system — finalize checklist + stop rules"
+  - "17:00-18:00 Weekly Review + Plan"
+  - "18:00-18:15 Daily review"
+
+trading_rules_today:
+  allowed: "Optional"
+  stop_conditions:
+    - "Any emotional heat"
+    - "Any rule ambiguity (if unclear, no trade)"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "09:00 Deep Work — ship Dream.OS slice"

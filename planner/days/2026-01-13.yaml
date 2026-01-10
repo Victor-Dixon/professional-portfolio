@@ -1,0 +1,25 @@
+schema_version: 1
+date: "2026-01-13"
+day_theme: "Ship path"
+must_win_3:
+  - "Dream.OS: finish shippable or clean PR-ready state"
+  - "Trading: pre-trade checklist used"
+  - "Short admin sweep"
+
+time_blocks:
+  - "09:00-10:30 Deep Work — finish implementation"
+  - "10:30-11:15 Deep Work — docs/devlog"
+  - "11:15-12:00 Deep Work — final validation pass"
+  - "17:00-17:15 Daily review"
+
+trading_rules_today:
+  allowed: "Yes, only A+"
+  stop_conditions:
+    - "Any checklist skip"
+    - "Any revenge impulse"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "09:00 Deep Work — polish + merge/PR"

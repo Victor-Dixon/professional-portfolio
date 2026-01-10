@@ -1,0 +1,27 @@
+schema_version: 1
+date: "2026-01-12"
+day_theme: "Deep work day 1 — build momentum"
+must_win_3:
+  - "Dream.OS: implement core slice + run validation"
+  - "Trading: journal template used (even if no trades)"
+  - "Movement"
+
+time_blocks:
+  - "09:00-10:30 Deep Work — implement slice"
+  - "10:30-10:45 Break"
+  - "10:45-12:00 Deep Work — tests/validation ritual"
+  - "16:00-16:30 Admin — inbox + cleanup"
+  - "17:00-17:15 Daily review"
+
+trading_rules_today:
+  allowed: "Yes, only A+"
+  max_trades: 2
+  stop_conditions:
+    - "1 loss + heat rises"
+    - "Any rule-break"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "09:00 Deep Work — finish + document"

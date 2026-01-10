@@ -1,0 +1,25 @@
+schema_version: 1
+date: "2026-01-15"
+day_theme: "Second shippable (small) + system reinforcement"
+must_win_3:
+  - "Dream.OS: one small improvement (refactor/guardrail/test)"
+  - "Trading: strict no-trade unless perfect"
+  - "Admin sweep"
+
+time_blocks:
+  - "09:00-10:30 Deep Work — small improvement"
+  - "10:30-12:00 Deep Work — tests + tidy"
+  - "16:00-16:30 Admin — bills/inbox"
+  - "17:00-17:15 Daily review"
+
+trading_rules_today:
+  allowed: "Conditional"
+  condition: "Only if checklist is 100% green + emotional heat LOW"
+  stop_conditions:
+    - "Anything less than 100% green"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "09:00 Deep Work — weekly closeout prep"

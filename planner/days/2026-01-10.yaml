@@ -1,0 +1,27 @@
+schema_version: 1
+date: "2026-01-10"
+day_theme: "Stabilize + set runway"
+must_win_3:
+  - "Draft the Dream.OS shippable plan + smallest implementation slice"
+  - "Trading: rules page + checklist draft"
+  - "Movement + sleep plan locked"
+
+time_blocks:
+  - "09:30-10:15 Sprint setup — pick shippable + acceptance criteria"
+  - "10:15-12:00 Build — implement smallest slice"
+  - "12:00-12:15 Log — devlog + next step"
+  - "16:00-16:30 Admin — bills/checks/inbox"
+  - "17:00-17:15 Daily review"
+
+trading_rules_today:
+  allowed: "Yes, only A+"
+  stop_conditions:
+    - "Any rule-break"
+    - "Emotional heat MED+"
+    - "Equity near bill threshold"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "09:00 Build — continue shippable"
