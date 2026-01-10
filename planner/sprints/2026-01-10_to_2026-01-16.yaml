@@ -1,0 +1,48 @@
+schema_version: 1
+sprint_id: "2026-01-10_to_2026-01-16"
+timezone: "America/Chicago"
+
+must_win_outcomes:
+  - "Ship 1 measurable Dream.OS improvement (end-to-end, committed)"
+  - "Trading discipline week: only A+ setups + journal every session"
+  - "Stability: protect bill money, keep sleep floor, daily cleanup"
+
+primary_projects:
+  - id: "dreamos-core"
+    definition_of_done:
+      - "Merged change OR clean PR ready"
+      - "One test/validation ritual updated or added"
+      - "Devlog entry written"
+    target_shippable:
+      - "Add 'end-of-execution' marker detection OR tighten agent completion signals"
+  - id: "trading-system"
+    definition_of_done:
+      - "Daily trade log exists"
+      - "Rules enforced: no emotional trades"
+    target_shippable:
+      - "One-page entry checklist + stop conditions + post-trade review prompt"
+
+risk_controls:
+  money_safety:
+    - "Do not dip below bill-protection threshold (rent/basics)."
+    - "If equity approaches threshold: stop trading immediately."
+  emotional_heat:
+    - "If heat HIGH: no new positions today."
+    - "If 2 rule breaks in a day: shutdown trading for 48h."
+  sleep:
+    - "If <6.5h sleep: no discretionary risk; admin/build only."
+
+time_strategy:
+  deep_work_blocks:
+    - "Mon–Fri 09:00-12:00"
+  admin_blocks:
+    - "Mon/Wed/Fri 16:00-17:00"
+  review_blocks:
+    - "Sun 17:00-18:00 weekly review"
+    - "Daily 17:00-17:15 closeout"
+
+success_metrics:
+  - "1 shipped Dream.OS improvement (measurable)"
+  - "0 revenge trades"
+  - "7/7 daily reviews completed"
+  - "At least 4 movement sessions"

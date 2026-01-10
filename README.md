@@ -122,6 +122,8 @@ For detailed career planning and positioning strategies, see:
 - **[AI Orchestrator Positioning](career-materials/AI_ORCHESTRATOR_POSITIONING.md)** - Strategic positioning as AI systems expert
 - **[Maintenance Engineer Positioning](career-materials/MAINTENANCE_ENGINEER_POSITIONING.md)** - SRE and platform engineering focus
 - **[Repository Decisions](career-materials/FINAL_REPOSITORY_DECISIONS.md)** - Enterprise portfolio management analysis
+- **[Daily Trading Planner](career-materials/DAILY_TRADING_PLANNER.md)** - Single-source daily plan → execution → review template
+- **[Planner Files](planner/README.md)** - Sprint and daily plan files built from the SSOT template
 
 ---
 

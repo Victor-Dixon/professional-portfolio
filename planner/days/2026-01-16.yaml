@@ -1,0 +1,24 @@
+schema_version: 1
+date: "2026-01-16"
+day_theme: "Closeout + reset"
+must_win_3:
+  - "Sprint closeout: list what shipped + what broke + next fixes"
+  - "Trading: weekly summary (rules followed? violations?)"
+  - "Recovery night"
+
+time_blocks:
+  - "09:00-10:30 Deep Work — closeout notes + backlog grooming"
+  - "10:30-12:00 Deep Work — finalize docs / cleanup"
+  - "16:00-17:00 Admin + Cleanup"
+  - "17:00-17:15 Daily review"
+
+trading_rules_today:
+  allowed: "Optional"
+  stop_conditions:
+    - "Any fatigue/heat"
+
+capture_inbox: []
+end_of_day_review:
+  shipped: []
+  learned: []
+  tomorrow_first_block: "Next sprint planning"
